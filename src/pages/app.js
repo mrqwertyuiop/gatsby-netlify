@@ -7,12 +7,14 @@ import Login from "../components/login"
 import Layout from "../components/layout"
 
 const App = () => {
-    <Layout>
+    return (
+    <MinimalLayout>
         <Router>
             <PrivateRoute path="/app/profile" component={Profile} />
             <Login path="/app/login" />
         </Router>
-    </Layout>
+    </MinimalLayout>
+    )
 }
 
 export default App
