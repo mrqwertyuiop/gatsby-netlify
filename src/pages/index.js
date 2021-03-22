@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import FunctionClick from "../components/FunctionClick"
+import ClassClickButton from "../components/ClassClickButton"
 import contactInfo from "../../site/settings/config_info.json"
 
 const BlogIndex = ({ data, location }) => {
@@ -30,6 +31,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <FunctionClick/>
+      <ClassClickButton/>
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
