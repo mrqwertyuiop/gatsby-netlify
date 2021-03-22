@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import FunctionClick from "../components/FunctionClick"
 import contactInfo from "../../site/settings/config_info.json"
 
 const BlogIndex = ({ data, location }) => {
@@ -28,6 +29,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
+      <FunctionClick/>
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
