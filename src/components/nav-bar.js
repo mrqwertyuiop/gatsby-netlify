@@ -25,6 +25,14 @@ export default function NavBar() {
                 <Link to="/app/profile">Profile</Link>
                 {` `}
                 {isLoggedIn() ? (
+                     <a
+                     href="/app/informasi"
+                     >
+                         Informasi
+                     </a>
+                ) : null
+                }
+                {isLoggedIn() ? (
                     <a
                     href="/"
                     onClick={event => {
